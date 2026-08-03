@@ -1,43 +1,117 @@
 ---
 
-# 🥋 Club de Karate Nomae.
+# 🥋 Club de Karate Nomae
 
-Página web oficial para un club de karate Nomae. El objetivo es ofrecer una plataforma moderna donde los usuarios puedan conocer el club, consultar horarios, informarse sobre los entrenamientos, eventos, noticias y contactar con los responsables.
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-Language-blue)
+![Vite](https://img.shields.io/badge/Vite-Build-purple)
+![Supabase](https://img.shields.io/badge/Supabase-Backend-green)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styles-cyan)
+
+Página web oficial para el **Club de Karate Nomae**.
+
+El objetivo del proyecto es crear una plataforma moderna donde alumnos, familias y visitantes puedan conocer el club, consultar horarios, informarse sobre entrenamientos, eventos, noticias y contactar con los responsables.
 
 ---
 
-# 📖 Descripción.
+# 🚧 Estado del proyecto
 
-Este proyecto consiste en el desarrollo de una aplicación web responsive destinada a mejorar la presencia online del club.
+Actualmente el proyecto se encuentra en fase de desarrollo.
 
-Entre sus principales funciones estarán:
+Próximas tareas:
+
+- Diseño de la interfaz.
+- Creación de componentes principales.
+- Integración con Supabase.
+- Desarrollo de contenido dinámico.
+- Optimización y despliegue.
+
+---
+
+# 📑 Índice rápido
+
+- [📖 Descripción](#-descripción)
+- [🎯 Objetivos](#-objetivos)
+- [🏯 Sobre el club](#-sobre-el-club)
+- [🛠 Tecnologías](#-tecnologías)
+- [🏗 Arquitectura](#-arquitectura)
+- [🧠 Decisiones técnicas](#-decisiones-técnicas)
+- [🗄 Base de datos Supabase](#-base-de-datos-supabase)
+- [📁 Estructura del proyecto](#-estructura-del-proyecto)
+- [⚙️ Instalación](#️-instalación)
+- [🔐 Variables de entorno](#-variables-de-entorno)
+- [✨ Funcionalidades](#-funcionalidades)
+- [🎨 Diseño](#-diseño)
+- [📱 Responsive](#-responsive)
+- [♿ Accesibilidad](#-accesibilidad)
+- [🔒 Seguridad](#-seguridad)
+- [⚡ Rendimiento](#-rendimiento)
+- [🔍 SEO](#-seo)
+- [🧪 Testing](#-testing)
+- [🚀 Roadmap](#-roadmap)
+- [📸 Capturas](#-capturas)
+- [🌍 Despliegue](#-despliegue)
+- [👨‍💻 Autor](#-autor)
+
+---
+
+# 📖 Descripción
+
+Este proyecto consiste en el desarrollo de una aplicación web responsive destinada a mejorar la presencia online del Club de Karate Nomae.
+
+La aplicación permitirá centralizar toda la información importante del dojo y ofrecer una experiencia rápida, accesible e intuitiva para alumnos, familias y nuevos usuarios.
+
+Principales funcionalidades:
 
 - Presentación del club.
 - Información sobre instructores.
 - Horarios de entrenamiento.
-- Galería de imágenes.
-- Noticias y eventos.
-- Información sobre competiciones.
+- Galería multimedia.
+- Noticias.
+- Eventos.
+- Competiciones.
 - Formulario de contacto.
-- Localización del dojo.
+- Ubicación del dojo.
 - Información para nuevos alumnos.
 
-El diseño estará orientado a ofrecer una experiencia sencilla, rápida y accesible desde cualquier dispositivo.
+⬆️ [Volver al índice](#-índice-rápido)
 
 ---
 
-# 🎯 Objetivos.
+# 🎯 Objetivos
+
+Los objetivos principales del proyecto son:
 
 - Mejorar la presencia digital del club.
 - Facilitar el acceso a la información.
-- Conseguir una navegación intuitiva.
-- Optimizar el rendimiento.
-- Aplicar buenas prácticas de desarrollo con React.
-- Crear una aplicación fácilmente escalable.
+- Crear una navegación intuitiva.
+- Desarrollar una aplicación escalable.
+- Aplicar buenas prácticas frontend.
+- Optimizar rendimiento y accesibilidad.
+- Crear una base preparada para futuras funcionalidades.
+
+⬆️ [Volver al índice](#-índice-rápido)
 
 ---
 
-# 🛠 Tecnologías.
+# 🏯 Sobre el club
+
+La aplicación busca representar la identidad del Club de Karate Nomae y transmitir los valores principales del karate:
+
+- Disciplina.
+- Respeto.
+- Constancia.
+- Superación personal.
+- Trabajo en equipo.
+- Tradición.
+
+La estética estará inspirada en la filosofía del karate y la cultura japonesa.
+
+⬆️ [Volver al índice](#-índice-rápido)
+
+---
+
+# 🛠 Tecnologías
 
 ## Frontend
 
@@ -48,224 +122,363 @@ El diseño estará orientado a ofrecer una experiencia sencilla, rápida y acces
 - HTML5.
 - CSS3.
 
-## Backend as a Service (BaaS)
-- Supabase.
-  - Base de datos PostgreSQL.
-  - Autenticación (si se implementa).
-  - Storage para imágenes y archivos.
-  - API REST automática.
-  - API Realtime (si se necesita).
-  - Políticas de seguridad (RLS).
-  - Edge Functions (opcional).
+---
 
-## Estilos.
+## Backend as a Service (BaaS)
+
+Se utilizará **Supabase** como servicio backend.
+
+Servicios utilizados:
+
+- PostgreSQL Database.
+- Authentication.
+- Storage para imágenes.
+- API REST automática.
+- API Realtime.
+- Row Level Security (RLS).
+- Edge Functions para futuras necesidades.
+
+---
+
+## Estilos
 
 - Tailwind CSS.
 - Flexbox.
 - CSS Grid.
 - Responsive Design.
 
-## Herramientas.
+---
+
+## Herramientas
 
 - Git.
 - GitHub.
-- VS Code.
+- Visual Studio Code.
 - npm.
 
----
-
-# 🗄 Base de datos.
-
-La aplicación utilizará Supabase como Backend as a Service (BaaS).
-
-Se aprovecharán los siguientes servicios:
-
-- Base de datos PostgreSQL.
-- API REST generada automáticamente.
-- Almacenamiento de imágenes para la galería.
-- Autenticación de administradores (futuro).
-- Políticas de seguridad mediante Row Level Security (RLS).
-
-### Posibles tablas.
-
-- alumnos.
-- instructores.
-- horarios.
-- noticias.
-- eventos.
-- categorias.
-- galeria.
-- usuarios (administradores).
+⬆️ [Volver al índice](#-índice-rápido)
 
 ---
 
-# 📁 Estructura del proyecto.
+# 🏗 Arquitectura
+
+La aplicación seguirá una arquitectura basada en componentes.
 
 ```
+                    Usuario
+                       |
+                       ↓
+              React Application
+                       |
+        --------------------------------
+        |              |               |
+   Components       Router          Hooks
+        |
+        ↓
+   Supabase Client
+        |
+ -------------------------
+ |                       |
+Database              Storage
+PostgreSQL            Imágenes
+```
 
-mi-proyecto/
-│
+Flujo:
+
+1. El usuario accede a la aplicación.
+2. React renderiza la interfaz.
+3. Los componentes solicitan información.
+4. Supabase devuelve los datos.
+5. La información se muestra dinámicamente.
+
+⬆️ [Volver al índice](#-índice-rápido)
+
+---
+
+# 🧠 Decisiones técnicas
+
+## ¿Por qué React?
+
+React permite:
+
+- Crear componentes reutilizables.
+- Mantener una estructura escalable.
+- Gestionar interfaces dinámicas.
+- Separar lógica y presentación.
+
+---
+
+## ¿Por qué TypeScript?
+
+TypeScript aporta:
+
+- Mayor seguridad en el código.
+- Mejor mantenimiento.
+- Detección temprana de errores.
+- Mejor experiencia de desarrollo.
+
+---
+
+## ¿Por qué Supabase?
+
+Supabase permite:
+
+- Utilizar PostgreSQL.
+- Evitar crear un backend desde cero.
+- Gestionar autenticación.
+- Almacenar archivos.
+- Escalar la aplicación fácilmente.
+
+⬆️ [Volver al índice](#-índice-rápido)
+
+---
+
+# 🗄 Base de datos Supabase
+
+La aplicación utilizará Supabase como Backend as a Service.
+
+Servicios utilizados:
+
+- PostgreSQL.
+- API REST.
+- Storage.
+- Authentication.
+- Row Level Security.
+
+---
+
+## Modelo de datos
+
+### alumnos
+
+Información de alumnos.
+
+```
+id
+nombre
+apellidos
+fecha_nacimiento
+grupo
+fecha_alta
+```
+
+---
+
+### instructores
+
+Información de profesores.
+
+```
+id
+nombre
+grado
+descripcion
+imagen_url
+```
+
+---
+
+### horarios
+
+Información de entrenamientos.
+
+```
+id
+dia
+hora_inicio
+hora_fin
+grupo
+instructor_id
+```
+
+---
+
+### noticias
+
+Publicaciones del club.
+
+```
+id
+titulo
+contenido
+imagen_url
+fecha_creacion
+```
+
+---
+
+### eventos
+
+Competiciones y actividades.
+
+```
+id
+nombre
+descripcion
+fecha
+ubicacion
+imagen_url
+```
+
+---
+
+### galeria
+
+Contenido multimedia.
+
+```
+id
+titulo
+imagen_url
+categoria
+fecha
+```
+
+⬆️ [Volver al índice](#-índice-rápido)
+
+---
+
+# 📁 Estructura del proyecto
+
+```
+karate-web-nomae/
+
 ├── public/
-│   ├── images/
-│   ├── icons/
-│   └── favicon.ico
 │
 ├── src/
+│
 │   ├── assets/
-│   │
+│
 │   ├── components/
 │   │   ├── common/
 │   │   ├── layout/
 │   │   └── ui/
-│   │
+│
 │   ├── pages/
-│   │   ├── Home/
-│   │   ├── Login/
-│   │   ├── Profile/
-│   │   └── NotFound/
 │   │
 │   ├── layouts/
-│   │
+│
 │   ├── routes/
 │   │   └── router.tsx
-│   │
+│
 │   ├── services/
 │   │   ├── supabase.ts
 │   │   └── api/
-│   │
+│
 │   ├── hooks/
-│   │
+│
 │   ├── context/
-│   │
+│
 │   ├── types/
-│   │
+│
 │   ├── utils/
-│   │
+│
 │   ├── styles/
-│   │
+│
 │   ├── App.tsx
-│   ├── main.tsx
-│   └── vite-env.d.ts
+│   └── main.tsx
 │
 ├── .env
-├── .gitignore
-├── eslint.config.js
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
+```
 
+⬆️ [Volver al índice](#-índice-rápido)
 
-src/
-│
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── logos/
-├── components/
-│   ├── Navbar/
-│   ├── Footer/
-│   ├── Hero/
-│   ├── Cards/
-│   ├── Button/
-│   ├── Gallery/
-├── pages/
-│   ├── Home.jsx
-│   ├── Club.jsx
-│   ├── Horarios.jsx
-│   ├── Noticias.jsx
-│   ├── Eventos.jsx
-│   ├── Galeria.jsx
-│   ├── Contacto.jsx
-│   └── Error404.jsx
-├── context/
-├── data/
-├── App.jsx
-├── main.jsx
-└── router.jsx
+---
+
+# ⚙️ Instalación
+
+Clonar repositorio:
+
+```bash
+git clone https://github.com/NoeClariNista/karate-web-nomae.git
+```
+
+Entrar en el proyecto:
+
+```bash
+cd karate-web-nomae
+```
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Ejecutar:
+
+```bash
+npm run dev
+```
+
+Crear producción:
+
+```bash
+npm run build
+```
+
+Vista previa:
+
+```bash
+npm run preview
 ```
 
 ---
 
-# 🚀 Funcionalidades.
+# 🔐 Variables de entorno
+
+Crear archivo:
+
+```
+.env
+```
+
+Añadir:
+
+```env
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
+```
+
+Nunca subir este archivo al repositorio.
+
+⬆️ [Volver al índice](#-índice-rápido)
+
+---
+
+# ✨ Funcionalidades
 
 - Navegación SPA.
-- Diseño responsive.
-- Menú adaptable a móviles.
 - Componentes reutilizables.
-- Animaciones suaves.
-- Carga optimizada de imágenes.
-- Organización modular.
-- Código mantenible.
-- Posibilidad de añadir un panel de administración en el futuro.
+- Diseño responsive.
+- Menú móvil.
+- Animaciones.
+- Gestión dinámica de contenido.
+- Preparación para panel administrador.
+
+⬆️ [Volver al índice](#-índice-rápido)
 
 ---
 
-# 📄 Secciones de la web.
+# 🎨 Diseño
 
-## Inicio.
+La interfaz seguirá una estética relacionada con el karate:
 
-- Imagen principal.
-- Presentación.
-- Últimas noticias.
-- Accesos rápidos.
+- Diseño limpio.
+- Inspiración japonesa.
+- Buena jerarquía visual.
+- Fotografías del dojo.
+- Experiencia sencilla.
 
----
-
-## El Club.
-
-- Historia.
-- Filosofía.
-- Valores.
-- Información general.
+⬆️ [Volver al índice](#-índice-rápido)
 
 ---
 
-## Senseis.
-
-- Fotografía.
-- Grado.
-- Experiencia.
-- Biografía.
-
----
-
-## Horarios.
-
-- Horarios por grupos.
-- Niños.
-- Adultos.
-- Competición.
-
----
-
-## Galería.
-
-- Fotografías.
-- Vídeos.
-- Eventos destacados.
-
----
-
-## Noticias.
-
-- Publicaciones.
-- Resultados.
-- Competiciones.
-
----
-
-## Contacto.
-
-- Formulario.
-- Email.
-- Teléfono.
-- Redes sociales.
-- Ubicación mediante Google Maps.
-
----
-
-# 📱 Responsive.
+# 📱 Responsive
 
 La aplicación estará optimizada para:
 
@@ -273,33 +486,54 @@ La aplicación estará optimizada para:
 - Tablet.
 - Smartphone.
 
+Aplicando:
+
+- Mobile First.
+- Flexbox.
+- CSS Grid.
+- Diseño adaptable.
+
 ---
 
-# ♿ Accesibilidad.
+# ♿ Accesibilidad
 
-Se seguirán buenas prácticas como:
+Buenas prácticas:
 
-- Uso correcto de etiquetas semánticas.
+- Etiquetas semánticas.
 - Contraste adecuado.
 - Navegación mediante teclado.
-- Textos alternativos en imágenes.
+- Textos alternativos.
 - Formularios accesibles.
 
 ---
 
-# ⚡ Rendimiento.
+# 🔒 Seguridad
 
-Se buscará optimizar:
+Se aplicarán:
+
+- Variables de entorno.
+- RLS en Supabase.
+- Validación de formularios.
+- Control de permisos.
+- Protección de rutas privadas.
+
+---
+
+# ⚡ Rendimiento
+
+Optimización mediante:
 
 - Lazy Loading.
-- División del código (Code Splitting).
+- Code Splitting.
 - Optimización de imágenes.
 - Componentes reutilizables.
 - Renderizados eficientes.
 
 ---
 
-# 🔍 SEO.
+# 🔍 SEO
+
+Implementación:
 
 - Meta etiquetas.
 - Open Graph.
@@ -310,163 +544,81 @@ Se buscará optimizar:
 
 ---
 
-# 🔐 Futuras mejoras.
+# 🧪 Testing
 
-- Área privada para alumnos.
-- Gestión de pagos.
-- Reserva de clases.
-- Calendario de eventos.
-- Gestión de licencias.
-- Panel de administración.
-- Integración con Firebase.
-- Backend propio.
-- Base de datos.
-- Login.
+Pruebas futuras:
+
+- Vitest.
+- React Testing Library.
+- Playwright.
 
 ---
 
-# 💻 Instalación.
+# 🚀 Roadmap
 
-Clonar el repositorio.
+## Primera versión
 
-```bash
-git clone [https://github.com/usuario/club-karate-tenerife.git](https://github.com/NoeClariNista/karate-web-nomae.git)
-```
-
-Entrar en el proyecto.
-
-```bash
-cd karate-web-nomae
-```
-
-Instalar dependencias.
-
-```bash
-npm install
-```
-
-Ejecutar el proyecto.
-
-```bash
-npm run dev
-```
-
-Compilar para producción.
-
-```bash
-npm run build
-```
-
-Vista previa.
-
-```bash
-npm run preview
-```
+- [ ] Configuración inicial.
+- [ ] React + Vite.
+- [ ] TypeScript.
+- [ ] Navbar.
+- [ ] Hero.
+- [ ] Footer.
+- [ ] Página Inicio.
+- [ ] Página Club.
+- [ ] Horarios.
+- [ ] Galería.
+- [ ] Noticias.
+- [ ] Contacto.
 
 ---
 
-# 📌 Convenciones.
+## Futuras versiones
 
-- Componentes en PascalCase.
-- Hooks con prefijo `use`.
-- Variables descriptivas.
-- Componentes pequeños y reutilizables.
-- Separación entre lógica y presentación.
+- [ ] Integración completa Supabase.
+- [ ] Autenticación.
+- [ ] Panel administrador.
+- [ ] Área privada alumnos.
+- [ ] Reservas online.
+- [ ] Gestión de pagos.
+- [ ] Deploy.
 
 ---
 
-# 🌳 Git Flow.
+# 📸 Capturas
 
-Se recomienda trabajar mediante ramas:
+Añadir capturas del proyecto:
 
 ```
-main
-│
-develop
-│
-feature/navbar
-feature/home
-feature/contacto
-feature/galeria
-feature/horarios
-feature/noticias
+docs/
+
+home.png
+horarios.png
+contacto.png
 ```
 
 ---
 
-# 📝 Commits.
+# 🌍 Despliegue
 
-Ejemplos:
+Plataformas recomendadas:
 
-```
-feat: añadir componente Hero
-
-fix: corregir navegación
-
-style: mejorar diseño responsive
-
-refactor: simplificar componente Card
-
-docs: actualizar README
-
-chore: actualizar dependencias
-```
+- Vercel.
+- Netlify.
+- GitHub Pages.
 
 ---
 
-# 📷 Capturas.
+# 👨‍💻 Autor
 
-Aquí podrán añadirse imágenes del proyecto.
+**Noelia Hernández Domínguez**
 
-```
-/docs
-    home.png
-    horarios.png
-    contacto.png
-```
+Proyecto desarrollado como práctica de desarrollo Frontend con React y TypeScript para la creación de una página web profesional destinada a un club de karate local.
 
 ---
 
-# 📌 Roadmap.
+# 📄 Licencia
 
-- [ ] Configuración inicial
-- [ ] React + Vite
-- [ ] Navbar
-- [ ] Hero
-- [ ] Footer
-- [ ] Página Inicio
-- [ ] Página Club
-- [ ] Horarios
-- [ ] Galería
-- [ ] Noticias
-- [ ] Contacto
-- [ ] Responsive
-- [ ] SEO
-- [ ] Optimización
-- [ ] Deploy
-
----
-
-# 🚀 Despliegue.
-
-El proyecto podrá desplegarse en:
-
-- GitHub Pages
-- Netlify
-- Vercel
-
----
-
-# 👨‍💻 Autor.
-
-Nombre: Noelia Hernández Domínguez.
-
-Proyecto desarrollado como práctica de desarrollo Frontend con React para el desarrollo de una página web necesaria en un club de Karate Local.
-
----
-
-# 📄 Licencia.
-
-Este proyecto es de uso educativo y puede adaptarse para cualquier club deportivo.
+Proyecto de uso educativo y adaptable para cualquier club deportivo.
 
 ---
